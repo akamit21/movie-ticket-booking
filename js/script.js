@@ -41,12 +41,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   let dropdown = document.getElementById("selectCity");
   dropdown.innerHTML = "";
   // create dropdown list
-  // let defaultOption = document.createElement("option");
-  // defaultOption.value = "";
-  // defaultOption.innerHTML = "SELECT CITY";
-  // defaultOption.setAttribute("selected", "true");
-  // defaultOption.setAttribute("disabled", "true");
-  // dropdown.appendChild(defaultOption);
+  let defaultOption = document.createElement("option");
+  defaultOption.value = "";
+  defaultOption.innerHTML = "SELECT CITY";
+  defaultOption.setAttribute("selected", "true");
+  defaultOption.setAttribute("disabled", "true");
+  dropdown.appendChild(defaultOption);
   cities.forEach((city) => {
     let option = document.createElement("option");
     option.value = city.id;
@@ -63,6 +63,12 @@ const fetchMovieByCity = async (e) => {
   let dropdown = document.getElementById("selectMovie");
   dropdown.innerHTML = "";
   // create dropdown list
+  let defaultOption = document.createElement("option");
+  defaultOption.value = "";
+  defaultOption.innerHTML = "SELECT MOVIE";
+  defaultOption.setAttribute("selected", "true");
+  defaultOption.setAttribute("disabled", "true");
+  dropdown.appendChild(defaultOption);
   movieList.forEach((movie) => {
     let option = document.createElement("option");
     option.value = movie.fk_movie_id;
