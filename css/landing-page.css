@@ -1,0 +1,70 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+header.background {
+  position: relative;
+  background: url("../img/bg-header.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+header.background .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.25;
+}
+
+header.background h1 {
+  font-size: 36px;
+}
+
+.section-padding {
+  padding: 50px 0;
+}
+
+.seat-info {
+  background-color: rgba(21, 25, 29, 0.2);
+  padding: 5px;
+}
+
+.seat-info strong {
+  margin-left: 8px;
+  line-height: 48px;
+}
+
+.seat {
+  height: 40px;
+  width: 45px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 3px solid #313131;
+  cursor: pointer;
+  flex: 1 0 8%;
+}
+
+.seat.available {
+  background-color: #fefefe;
+}
+
+.seat.selected {
+  background-color: #006400;
+}
+
+.seat.booked {
+  background-color: #b20000;
+}

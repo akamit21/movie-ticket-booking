@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+
+    <title>Movie Ticket App</title>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- font-awesome -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- google-font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- custom-css -->
+    <link href="css/landing-page.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand font-weight-bold" href="index.html">
+          BOOK MY TICKET
+        </a>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <header class="background text-white">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-10 mx-auto text-center">
+            <h1 class="mb-1">
+              BOOK YOUR TICKETS FOR MOVIE !!!
+            </h1>
+            <h6>
+              Safe, secure, reliable ticketing.Your ticket to live
+              entertainment!
+            </h6>
+          </div>
+          <div class="col-lg-9 col-xl-11 mx-auto">
+            <form>
+              <div class="form-row">
+                <div class="col-md-3 col-xl-4 mb-2">
+                  <label for="city" class="h6">Select City</label>
+                  <select
+                    name="city"
+                    class="form-control form-control-lg"
+                    id="selectCity"
+                    required
+                  >
+                    <option value="" selected="true" disabled="true"
+                      >SELECT CITY</option
+                    >
+                  </select>
+                </div>
+                <div class="col-md-6 col-xl-5 mb-2">
+                  <label for="movie" class="h6">Select Movie</label>
+                  <select
+                    name="movie"
+                    class="form-control form-control-lg"
+                    id="selectMovie"
+                    required
+                  >
+                    <option value="" selected="true" disabled="true"
+                      >SELECT MOVIE</option
+                    >
+                  </select>
+                </div>
+                <div class="col-md-3 col-xl-3 mb-2">
+                  <label for=""></label>
+                  <button
+                    type="button"
+                    class="btn btn-block btn-lg btn-primary mt-1"
+                    id="searchMovie"
+                  >
+                    SEARCH ...
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- movie-list -->
+    <section class="section-padding text-center">
+      <div class="container">
+        <div class="row" id="theatreList"></div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+
+    <title>Movie Ticket App</title>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- font-awesome -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- google-font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- custom-css -->
+    <link href="css/landing-page.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand font-weight-bold" href="index.html">
+          BOOK MY TICKET
+        </a>
+      </div>
+    </nav>
+
+    <!-- seat-info -->
+    <div class="seat-info">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="seat float-left available"></div>
+            <strong>Available</strong>
+          </div>
+          <div class="col">
+            <div class="seat float-left selected"></div>
+            <strong>Selected</strong>
+          </div>
+          <div class="col">
+            <div class="seat float-left booked"></div>
+            <strong>Booked</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-xl-5" id="showInfo"></div>
+
+          <div class="col-lg-6 col-xl-7">
+            <p class="text-center">SCREEN THIS SIDE</p>
+
+            <div
+              class="d-flex justify-content-center flex-wrap"
+              id="seatDiv"
+            ></div>
+
+            <hr />
+            <div class="row">
+              <div class="col-6">
+                <h5>Selected Seats <span id="count">0</span></h5>
+                <h5>Total Price ₹<span id="total">0</span></h5>
+              </div>
+              <div class="col-6">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark float-right"
+                  id="bookTicket"
+                >
+                  BOOK TICKETS
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script2.js"></script>
+  </body>
+</html>
