@@ -1,7 +1,6 @@
 # Ticket Booking App
 
-This is a sample blog I created as to get started with React and Flask.
-It shows how to simply use the redux, route and flask-API.
+This is a sample Online Movie Ticket Booking website to help the customers to book online tickets for a movie. It is build HTML, CSS, JavaScript, Flask, MySQl and Rest-API.
 
 ## Getting started
 
