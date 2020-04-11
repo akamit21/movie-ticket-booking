@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let cities = await api.getCityList();
   console.log(cities);
   let dropdown = document.getElementById("selectCity");
+  dropdown.innerHTML = "";
   // create dropdown list
   // let defaultOption = document.createElement("option");
   // defaultOption.value = "";
@@ -60,6 +61,7 @@ const fetchMovieByCity = async (e) => {
   let movieList = await api.getMovieListByCity(id);
   console.log(movieList);
   let dropdown = document.getElementById("selectMovie");
+  dropdown.innerHTML = "";
   // create dropdown list
   movieList.forEach((movie) => {
     let option = document.createElement("option");
@@ -78,7 +80,7 @@ const fetchShow = async (e) => {
   console.log(theatreList);
   console.log(showList);
   let theatreDiv = document.getElementById("theatreList");
-
+  theatreDiv.innerHTML = "";
   theatreList.forEach((theatre) => {
     let col = document.createElement("div");
     col.setAttribute("class", "col-lg-4");
